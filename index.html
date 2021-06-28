@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8" />
+   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+   <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+   <title>Camu</title>
+
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+   <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap" rel="stylesheet" />
+   <link rel="stylesheet" href="styles/app.css" />
+   <script src="scripts/getElement.js" defer></script>
+   <script src="scripts/index.js" defer></script>
+   <script src="scripts/eventListener.js" defer></script>
+</head>
+
+<body>
+   <header>
+      <div class="row">
+         <div class="col-md-4">
+            <h2>Calculaattori
+         </div>
+         <div class="col-md-4">
+            <h2>CAMU
+         </div>
+         <div class="col-md-4">
+            <h2>Muistivihko
+         </div>
+      </div>
+   </header>
+   <div class="row">
+      <div class="col-md-6">
+         <div id="results">
+            <h3>Result: <span id="result">0</span></h3>
+            <h3 id="calculation">0</h3>
+         </div>
+         <div id="calculator">
+            <div id="calc-btn-group">
+               <input type="button" id="num-one" value="1">
+               <input type="button" id="num-two" value="2">
+               <input type="button" id="num-three" value="3">
+               <input type="button" id="num-four" value="4">
+               <input type="button" id="num-five" value="5">
+               <input type="button" id="num-six" value="6">
+               <input type="button" id="num-seven" value="7">
+               <input type="button" id="num-eight" value="8">
+               <input type="button" id="num-nine" value="9">
+               <input type="button" id="num-zero" value="0">
+
+               <button type="button" id="btn-add">+</button>
+               <button type="button" id="btn-subtract">-</button>
+               <button type="button" id="btn-multiply">*</button>
+               <button type="button" id="btn-divide">/</button>
+               <br>
+               <select id="numbers" name="numbers" size="10">
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                  <option value="4">4</option>
+                  <option value="5">5</option>
+                  <option value="6">6</option>
+                  <option value="7">7</option>
+                  <option value="8">8</option>
+                  <option value="9">9</option>
+                  <option value="0">0</option>
+               </select>
+            </div>
+         </div>
+      </div>
+      <div class="col-md-6">
+      </div>
+   </div>
+</body>
+
+</html>

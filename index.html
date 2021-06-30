@@ -10,9 +10,7 @@
    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap" rel="stylesheet" />
    <link rel="stylesheet" href="styles/app.css" />
-   <script src="scripts/getElement.js" defer></script>
    <script src="scripts/index.js" defer></script>
-   <script src="scripts/eventListener.js" defer></script>
 </head>
 
 <body>
@@ -33,38 +31,27 @@
       <div class="col-md-6">
          <div id="results">
             <h3>Result: <span id="result">0</span></h3>
-            <h3 id="calculation">0</h3>
+            <div id="screen"></div>
          </div>
          <div id="calculator">
             <div id="calc-btn-group">
-               <input type="button" id="num-one" value="1">
-               <input type="button" id="num-two" value="2">
-               <input type="button" id="num-three" value="3">
-               <input type="button" id="num-four" value="4">
-               <input type="button" id="num-five" value="5">
-               <input type="button" id="num-six" value="6">
-               <input type="button" id="num-seven" value="7">
-               <input type="button" id="num-eight" value="8">
-               <input type="button" id="num-nine" value="9">
-               <input type="button" id="num-zero" value="0">
+               <input type="button" value="C">
+               <input type="button" value="1">
+               <input type="button" value="2">
+               <input type="button" value="3">
+               <input type="button" value="4">
+               <input type="button" value="5">
+               <input type="button" value="6">
+               <input type="button" value="7">
+               <input type="button" value="8">
+               <input type="button" value="9">
+               <input type="button" value="0">
 
-               <button type="button" id="btn-add">+</button>
-               <button type="button" id="btn-subtract">-</button>
-               <button type="button" id="btn-multiply">*</button>
-               <button type="button" id="btn-divide">/</button>
-               <br>
-               <select id="numbers" name="numbers" size="10">
-                  <option value="1">1</option>
-                  <option value="2">2</option>
-                  <option value="3">3</option>
-                  <option value="4">4</option>
-                  <option value="5">5</option>
-                  <option value="6">6</option>
-                  <option value="7">7</option>
-                  <option value="8">8</option>
-                  <option value="9">9</option>
-                  <option value="0">0</option>
-               </select>
+               <input type="button" value="+">
+               <input type="button" value="-">
+               <input type="button" value="*">
+               <input type="button" value="/">
+               <input type="button" value="=">
             </div>
          </div>
       </div>

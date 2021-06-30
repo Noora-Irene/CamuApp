@@ -18,7 +18,8 @@ header {
 }
 
 #results,
-#calculator {
+#calculator,
+#screen {
    margin: 2rem auto;
    max-width: 70%;
    border: 1px solid rgb(100, 2, 109);
@@ -31,8 +32,7 @@ header {
    text-align: center;
 }
 
-#calculator button,
-input {
+#calculator input {
    font: inherit;
    background: rgb(100, 2, 109);
    color: rgb(255, 255, 255);
@@ -44,12 +44,12 @@ input {
    cursor: pointer;
 }
 
-#calculator button:focus {
+#calculator input:focus {
    outline: none;
 }
 
-#calculator button:hover,
-#calculator button:active {
+#calculator input:hover,
+#calculator input:active {
    background: rgb(255, 243, 79);
    border-color: rgb(255, 115, 0);
    color: rgb(255, 115, 0);

@@ -64,7 +64,7 @@ function useOperator(nextOperator) {
       return;
    }
 
-   if (userInput1 == null && !isNaN(i)) {
+   if (userInput1 === null && !isNaN(i)) {
       calculator.userInput1 = i;
    } else if (operator) {
       const result = calculate(userInput1, i, operator);

@@ -17,9 +17,9 @@ header {
    width: 100%;
 }
 
-#results,
-#calculator,
-#screen {
+.results,
+.calculator,
+.screen {
    margin: 2rem auto;
    max-width: 70%;
    border: 1px solid rgb(100, 2, 109);
@@ -28,11 +28,11 @@ header {
    color: rgb(100, 2, 109);
 }
 
-#results {
+.results {
    text-align: center;
 }
 
-#calculator input {
+.calculator input {
    font: inherit;
    background: rgb(100, 2, 109);
    color: rgb(255, 255, 255);
@@ -44,17 +44,17 @@ header {
    cursor: pointer;
 }
 
-#calculator input:focus {
+.calculator input:focus {
    outline: none;
 }
 
-#calculator input:hover,
-#calculator input:active {
+.calculator input:hover,
+.calculator input:active {
    background: rgb(255, 243, 79);
    border-color: rgb(255, 115, 0);
    color: rgb(255, 115, 0);
 }
 
-#calc-btn-group {
+.calc-btn-group {
    text-align: center;
 }

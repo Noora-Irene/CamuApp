@@ -24,7 +24,8 @@ buttons.addEventListener('click', (e) => {
       return;
    }
    if (target.classList.contains('clear')) {
-      console.log(target.value);
+      clearAll(target.value);
+      updScreen();
       return;
    }
    inputNumber(target.value);
@@ -44,10 +45,16 @@ function inputNumber(num) {
 
 function inputDecimal(dot) {
    // Checks if there is already dot on screen
+   if (calculator.userInput2 === true) {
+      calculator.screenValue = '0';
+      calculator.userInput2 = false;
+      return
+   }
    if (!calculator.screenValue.includes(dot)) {
       calculator.screenValue += dot;
    }
 }
+
 function useOperator(nextOperator) {
    const { userInput1, screenValue, operator } = calculator
    const i = parseFloat(screenValue);
@@ -79,6 +86,13 @@ function calculate(userInput1, userInput2, operator) {
       return userInput1 / userInput2;
    }
    return userInput2;
+}
+
+function clearAll() {
+   calculator.screenValue = '0';
+   calculator.userInput1 = null;
+   calculator.userInput2 = false;
+   calculator.operator = null;
 }
 
 function updScreen() {

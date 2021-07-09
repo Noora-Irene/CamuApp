@@ -49,7 +49,7 @@ function useOperator(nextOperator) {
       calculator.userInput1 = i;
    } else if (operator) {
       const result = calculate(userInput1, i, operator);
-      calculator.screenValue = String(result);
+      calculator.screenValue = `${parseFloat(result.toFixed(7))}`;
       calculator.userInput1 = result;
    }
    calculator.userInput2 = true;
